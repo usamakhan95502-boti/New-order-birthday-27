@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Faiza Syed 🎆</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#0a0620;--bg2:#40125e;--tx:#fff;--ac:#ffd36e;--card:rgba(255,255,255,.12);box-sizing:border-box}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:linear-gradient(170deg,var(--bg1),var(--bg2)) fixed;color:var(--tx);font-family:'Poppins',system-ui,sans-serif;text-align:center;overflow:hidden}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.st{position:fixed;inset:0;overflow-y:auto;display:none;z-index:2}
+.st.on{display:block;animation:fade 1s}
+@keyframes fade{from{opacity:0}}
+.in{min-height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:calc(40px + env(safe-area-inset-top,0px)) 20px calc(40px + env(safe-area-inset-bottom,0px))}
+.w{max-width:480px;width:100%}
+h1,h2{font-family:'Great Vibes',cursive,serif;font-weight:400;color:var(--ac);margin:0 0 10px;line-height:1.1}
+h1{font-size:56px}h2{font-size:42px}
+p{font-weight:300;line-height:1.7;margin:0 0 12px}
+button{background:var(--ac);color:#2a0a45;border:0;border-radius:30px;padding:14px 28px;font:600 16px 'Poppins',sans-serif;margin-top:16px}
+.big{font-size:72px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.cd{display:flex;gap:10px;justify-content:center;margin:22px 0}
+.cd div{background:var(--card);border-radius:16px;padding:14px 8px;min-width:68px;backdrop-filter:blur(6px)}
+.cd b{display:block;font-size:34px;color:var(--ac);font-variant-numeric:tabular-nums}
+.cd span{font-size:12px;opacity:.8}
+#gift{font-size:110px;transition:.3s;cursor:pointer}
+.shake{animation:sk .4s}
+@keyframes sk{25%{transform:rotate(-12deg)}75%{transform:rotate(12deg)}}
+#chat{text-align:left;margin-top:10px}
+.m{display:flex;gap:8px;margin:10px 0;animation:fade .5s}
+.av{width:32px;height:32px;border-radius:50%;background:var(--ac);color:#2a0a45;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.b{background:var(--card);border-radius:4px 18px 18px 18px;padding:10px 14px;font-size:15px;line-height:1.5;backdrop-filter:blur(6px)}
+#arena{position:relative;width:100%;height:380px;background:var(--card);border-radius:22px;overflow:hidden;margin-top:12px;touch-action:manipulation}
+.t{position:absolute;top:-50px;font-size:42px;user-select:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(440px)}}
+.bar{display:flex;justify-content:space-between;font-weight:600;margin-top:8px}
+.letter{background:var(--card);border-radius:20px;padding:22px;text-align:left;backdrop-filter:blur(6px);margin-top:14px}
+.sign{font-family:'Great Vibes',cursive,serif;font-size:36px;color:var(--ac);text-align:right}
+.hide{display:none}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.mc{background:var(--card);border-radius:14px;height:76px;font-size:34px;display:flex;align-items:center;justify-content:center;transition:.3s;user-select:none;backdrop-filter:blur(6px)}.mc.up{background:var(--ac)}.mc.done{background:rgba(110,240,150,.4)}.hole{height:96px;border-radius:50%;background:rgba(0,0,0,.35);font-size:46px;display:flex;align-items:center;justify-content:center;user-select:none;box-shadow:inset 0 6px 14px rgba(0,0,0,.5)}button.opt{display:block;width:100%;background:var(--card);color:#fff;border:2px solid rgba(255,255,255,.25);margin-top:10px;font-weight:400}button.opt.ok{background:#2fb86a}button.opt.no{background:#c0476a}.shake{animation:sk .3s}
+.pc{height:118px;border-radius:16px;background:var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px;font-size:12px;line-height:1.35;transition:.3s;user-select:none;backdrop-filter:blur(6px)}.pc b{font-size:30px;display:block;margin-bottom:4px}.pc.cw{background:var(--ac);color:#2a0a45}.pc.cf{background:linear-gradient(135deg,#ff7eb3,#c2418f);color:#fff}.pc.ce{background:rgba(255,255,255,.07);opacity:.8}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<div class="st on" id="s0"><div class="in"><div class="w">
+  <div class="big">⏳</div>
+  <h2 id="ttl">Faiza Syed</h2>
+  <p>Tumhara birthday shuru hone mein sirf thora sa waqt baqi hai…<br>Abeeha ne tumhare liye ek khaas surprise tayyar kiya hai 🎁</p>
+  <div class="cd"><div><b id="d">0</b><span>din</span></div><div><b id="h">00</b><span>ghante</span></div><div><b id="mi">00</b><span>minute</span></div><div><b id="se">00</b><span>second</span></div></div>
+  <p>Raat 12 baje yahin raho, aur dekhna kya hota hai ✨</p>
+</div></div></div>
+
+<div class="st" id="s1"><div class="in"><div class="w">
+  <div class="big">🎂</div>
+  <p style="font-size:18px">Aur ab 12 baj gaye…</p>
+  <h1>Happy Birthday</h1>
+  <h2>Faiza Syed 🎉</h2>
+  <p>Aaj tumhara din hai, 26 November! Meri pyari dost, tumhein bohat bohat mubarak ho! 💖</p>
+  <button onclick="show('s2')">Tumhara surprise 🎁</button>
+</div></div></div>
+
+<div class="st" id="s2"><div class="in"><div class="w">
+  <h2>Ek khaas surprise</h2>
+  <div id="gift">🎁</div>
+  <p id="hint">Isay 3 baar tap karo!</p>
+  <div id="chat"></div>
+  <button id="b2" class="hide" onclick="show('s3')">Ab game khelo 🎮</button>
+</div></div></div>
+
+<div class="st" id="s3"><div class="in"><div class="w">
+  <h2 id="gt">Mini Games 🎮</h2>
+  <p id="gd"></p>
+  <div class="bar"><span id="gl"></span><span id="gs"></span></div>
+  <div id="gb"></div>
+  <button id="gn" class="hide"></button>
+</div></div></div>
+
+<div class="st" id="s4"><div class="in"><div class="w">
+  <h1>Faiza ke liye 💌</h1>
+  <div class="letter">
+    <p>Meri pyari Faiza,</p>
+    <p>Janamdin bohat bohat mubarak ho! 🎂 Pata hai, humein dost bane ek saal se zyada ho gaya hai, aur hum kabhi mile bhi nahi. Phir bhi tum meri zindagi mein itni khaas ho ke lagta hai jaise hum hamesha se jaante hain.</p>
+    <p>Screen ke us paar tum wo insaan ho jo meri baatein sunta hai, meri khushi mein khush hota hai, aur mere bure din ko bhi achha bana deta hai. Aaj ke zamane mein aisi sachi dosti bohat kam milti hai, aur main shukar guzar hoon ke tum meri dost ho. 💛</p>
+    <p>Allah tumhein hamesha khush, healthy aur salamat rakhe. Tumhari har jaiz dua qabool ho, tumhare saare khwab poore hon, aur tumhari zindagi mein sirf muskurahatein aur kamyabiyan hon. 🌸</p>
+    <p>Umeed hai ke ek din hum zaroor milenge, aur wo din bhi is din ki tarah yaadgar hoga, InshaAllah. Tab tak hamari dosti yunhi mazboot rahe, chahe doori kitni bhi ho. 🤝</p>
+    <p>Hamesha aise hi hansti raho, chamakti raho, aur doosron ko khush karti raho. Tum is se bhi zyada pyar aur izzat ki haqdar ho. Ek baar phir se Happy Birthday meri dost! 🎉</p>
+    <div class="sign">Hamesha tumhari dost,<br>Abeeha 💖</div>
+  </div>
+  <h2 style="margin-top:24px">Happy Birthday Faiza! 🎆</h2>
+  <button onclick="burst(80);rocket(14)">Aur fireworks 🎇</button>
+</div></div></div>
+
+<script>
+var cv=document.getElementById('fx'),cx=cv.getContext('2d'),P=[],R=[],rate=0;
+function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();addEventListener('resize',rs);
+var nofx=false;
+function rocket(n){if(nofx)return;for(var i=0;i<(n||1);i++)setTimeout(function(){R.push({x:cv.width*(.1+Math.random()*.8),y:cv.height,vy:-(cv.height/70+Math.random()*4),ty:cv.height*(.12+Math.random()*.35),h:Math.random()*360})},i*220)}
+function boom(x,y,h){for(var i=0;i<70;i++){var a=Math.random()*6.283,s=1+Math.random()*5;P.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:1,h:h+Math.random()*40})}}
+function loop(){
+  cx.globalCompositeOperation='destination-out';cx.fillStyle='rgba(0,0,0,.22)';cx.fillRect(0,0,cv.width,cv.height);
+  cx.globalCompositeOperation='lighter';
+  if(rate&&Math.random()<rate)rocket(1);
+  R=R.filter(function(r){r.y+=r.vy;r.vy*=.985;cx.fillStyle='hsl('+r.h+',100%,70%)';cx.fillRect(r.x,r.y,3,3);if(r.y<r.ty||r.vy>-2){boom(r.x,r.y,r.h);return false}return true});
+  P=P.filter(function(p){p.x+=p.vx;p.y+=p.vy;p.vy+=.05;p.vx*=.985;p.l-=.011;if(p.l<=0)return false;cx.fillStyle='hsla('+p.h+',100%,60%,'+p.l+')';cx.beginPath();cx.arc(p.x,p.y,2.2,0,6.283);cx.fill();return true});
+  requestAnimationFrame(loop)}
+loop();
+
+var E=['🎉','💖','🎈','✨','🌸','💛','🎂'];
+function heart(){var d=document.createElement('div');d.textContent=E[Math.floor(Math.random()*E.length)];d.style.cssText='position:fixed;bottom:-40px;z-index:3;pointer-events:none;left:'+Math.random()*95+'vw;font-size:'+(16+Math.random()*28)+'px;transition:transform '+(4+Math.random()*3)+'s linear,opacity 4s';document.body.appendChild(d);requestAnimationFrame(function(){d.style.transform='translateY(-115vh) rotate(25deg)';d.style.opacity='0'});setTimeout(function(){d.remove()},8000)}
+function burst(n){for(var i=0;i<n;i++)setTimeout(heart,i*70)}
+function show(id){document.querySelectorAll('.st').forEach(function(s){s.classList.remove('on')});var s=document.getElementById(id);s.classList.add('on');s.scrollTop=0;burst(14);nofx=(id==='s3');if(nofx){rate=0;R=[];P=[]}if(id==='s3')startG();if(id==='s4'){rate=.06;rocket(10)}}
+
+/* countdown to 26 Nov 2026 00:00 (device time) */
+var T=new Date(2026,10,26,0,0,0).getTime(),fired=false,tap=0;
+function pad(n){return n<10?'0'+n:''+n}
+function tick(){var df=T-Date.now();
+  if(df<=0){if(!fired){fired=true;go1()}return}
+  var s=Math.floor(df/1000);document.getElementById('d').textContent=Math.floor(s/86400);document.getElementById('h').textContent=pad(Math.floor(s%86400/3600));document.getElementById('mi').textContent=pad(Math.floor(s%3600/60));document.getElementById('se').textContent=pad(s%60)}
+function go1(){if(!document.getElementById('s0').classList.contains('on'))return;show('s1');rate=.12;rocket(12);burst(60)}
+setInterval(tick,1000);tick();
+document.getElementById('ttl').onclick=function(){tap++;if(tap>=5){fired=true;go1()}};
+
+/* surprise */
+var gt=0,CH=['Hey Faiza 👋','Pata hai, hum ek saal se zyada se dost hain, aur abhi tak kabhi mile bhi nahi 😅','Phir bhi tum meri sab se qareebi doston mein se ho 💛','Screen ke us paar ek aisa insaan hai jo meri har baat samajhta hai ✨','Isi liye maine ye poori website sirf tumhare liye banwayi 🎁','Ab thori si game khelo, aur phir tumhari wish ka aakhri surprise! 🎮'];
+document.getElementById('gift').onclick=function(){
+  var g=this;if(g.dataset.o)return;gt++;g.classList.remove('shake');void g.offsetWidth;g.classList.add('shake');
+  if(gt>=3){g.dataset.o=1;g.textContent='🎊';document.getElementById('hint').classList.add('hide');rocket(6);burst(40);chat(0)}};
+function chat(i){var c=document.getElementById('chat');
+  if(i>=CH.length){document.getElementById('b2').classList.remove('hide');return}
+  var t=document.createElement('div');t.className='m';t.innerHTML='<div class="av">A</div><div class="b">…</div>';c.appendChild(t);t.scrollIntoView({behavior:'smooth',block:'end'});
+  setTimeout(function(){t.lastChild.textContent=CH[i];t.scrollIntoView({behavior:'smooth',block:'end'});setTimeout(function(){chat(i+1)},900)},1100)}
+
+/* quiz + card game */
+function G(id){return document.getElementById(id)}
+function nextBtn(l,fn){var b=G('gn');b.textContent=l;b.classList.remove('hide');b.onclick=function(){b.classList.add('hide');fn()}}
+function startG(){quiz()}
+function quiz(){
+  G('gt').textContent='Game 1: Dosti Quiz 💬';G('gd').textContent='Dekhte hain hamari dosti kitni pakki hai!';G('gl').textContent='';G('gs').textContent='';G('gn').classList.add('hide');
+  var Q=[['Hum kitne waqt se dost hain?',['Sirf 1 din','1 saal se zyada','1 hafta'],[1]],['Kya hum kabhi mile hain?',['Abhi tak nahi 😅','Roz milte hain','Sirf khwab mein'],[0]],['Abeeha ki sab se achi dost kaun hai?',['Faiza Syed 😎','Faiza Syed 🥰','Sirf Faiza, koi aur nahi 💛'],[0,1,2]],['Faiza ki sab se achi quality kya hai?',['Pyaari hansi','Sachi dosti','Sab kuch! 💖'],[2]]];
+  var qi=0,ok=0,b=G('gb');b.className='';b.dataset.l='';
+  function ask(){
+    if(qi>=Q.length){b.innerHTML='<p style="font-size:19px;margin-top:20px">'+ok+'/'+Q.length+' sahi! '+(ok===Q.length?'Perfect dost! 🌟':'Phir bhi best dost! 💖')+'</p>';nextBtn('Game 2: Card Game 🎴',cards);return}
+    var q=Q[qi];b.innerHTML='<p style="font-size:19px;margin:16px 0 4px">'+(qi+1)+'. '+q[0]+'</p>';
+    q[1].forEach(function(o,i){var x=document.createElement('button');x.className='opt';x.textContent=o;
+      x.onclick=function(){if(b.dataset.l)return;b.dataset.l='1';var good=q[2].indexOf(i)>-1;x.classList.add(good?'ok':'no');
+        if(good){ok++;burst(8)}else{Array.prototype.forEach.call(b.querySelectorAll('.opt'),function(y,j){if(q[2].indexOf(j)>-1)y.classList.add('ok')})}
+        setTimeout(function(){b.dataset.l='';qi++;ask()},1200)};b.appendChild(x)})}
+  ask()}
+function cards(){
+  G('gt').textContent='Game 2: Card Game 🎴';
+  G('gd').textContent='9 cards hain. Do cards mein meri khaas wishes hain, aur ek card mein hamari dosti ka raaz. Dhoondo!';
+  var found=0,b=G('gb'),btn=G('gn');btn.classList.add('hide');b.innerHTML='';b.className='g3';
+  G('gl').textContent='Mile: 0/3';
+  var E=['Oops! Khaali card 😜','Yahan kuch nahi hai, aage dhoondo 🔍','Thori si koshish aur 💪','Is mein sirf hawa hai 💨','Nahi mila! Phir try karo 😄','Kismat agli baar 🍀'];
+  var D=[{c:'w',e:'🤲',t:'Allah tumhein hamesha khush, healthy aur salamat rakhe, Faiza! 💖'},{c:'w',e:'🌠',t:'Tumhare saare khwab is saal poore hon, aur har dua qabool ho! ✨'},{c:'f',e:'💞',t:'Forever Friendship<br><b style="font-size:15px">Abeeha & Faiza Syed</b>'}];
+  E.forEach(function(x,i){D.push({c:'e',e:['😜','🔍','💪','💨','😄','🍀'][i],t:x})});
+  D.sort(function(){return Math.random()-.5});
+  D.forEach(function(d){
+    var c=document.createElement('div');c.className='pc';c.innerHTML='<b>🎴</b>';
+    c.onclick=function(){
+      if(c.dataset.o)return;c.dataset.o='1';
+      c.classList.add(d.c==='w'?'cw':d.c==='f'?'cf':'ce');
+      c.innerHTML='<b>'+d.e+'</b>'+d.t;
+      if(d.c!=='e'){found++;G('gl').textContent='Mile: '+found+'/3';burst(8)}
+      if(found===3){G('gd').textContent='Wah! Tum ne teeno khaas cards dhoond liye 🎉';btn.textContent='Aakhri wish 💌';btn.classList.remove('hide');btn.onclick=function(){show('s4')}}
+    };
+    b.appendChild(c)})}
+</script>
+</body>
+</html>
